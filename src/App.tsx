@@ -9,7 +9,11 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <TweetWrapper />
+      <TweetWrapper
+        title="useStateを使って押した回数をカウントするボタンを作ってみました"
+        component={<IncrementsButton defaultValue={0} />}
+        tweetId="1268485591533944832"
+      />
     </div>
   );
 }
