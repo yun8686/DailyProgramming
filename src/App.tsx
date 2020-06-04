@@ -4,11 +4,17 @@ import './App.css';
 import IncrementsButton from './components/IncrementsButton';
 import Header from './components/Header';
 import TweetWrapper from './components/TweetWrapper';
+import ZipCodeForm from './components/ZipCodeForm';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      <TweetWrapper
+        title="useEffectを使って郵便番号から住所をサジェストするフォームを作ってみました"
+        component={<ZipCodeForm />}
+        tweetId="1268693255421480961"
+      />
       <TweetWrapper
         title="useStateを使って押した回数をカウントするボタンを作ってみました"
         component={<IncrementsButton defaultValue={0} />}
