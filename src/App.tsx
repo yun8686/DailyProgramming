@@ -5,11 +5,17 @@ import IncrementsButton from './components/IncrementsButton';
 import Header from './components/Header';
 import TweetWrapper from './components/TweetWrapper';
 import ZipCodeForm from './components/ZipCodeForm';
+import ImageCarousel from './components/ImageCarousel';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
+      <TweetWrapper
+        title="react-swipeable-viewsを使って画像のカルーセルを作ってみました"
+        component={<ImageCarousel />}
+        tweetId="1269165549847638018"
+      />
       <TweetWrapper
         title="useEffectを使って郵便番号から住所をサジェストするフォームを作ってみました"
         component={<ZipCodeForm />}
