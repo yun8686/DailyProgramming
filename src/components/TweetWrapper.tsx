@@ -10,11 +10,11 @@ type Props = {
 
 export default function TweetWrapper(props: Props) {
   return (
-    <Paper style={{ maxWidth: 680, margin: '10px auto 10px auto' }}>
+    <Paper style={{ maxWidth: 680, margin: '40px auto 40px auto' }}>
       <Typography>{props.title}</Typography>
       <div>{props.component}</div>
-      <div style={{ margin: '0 auto', display: 'inline-block' }}>
-        <TwitterTweetEmbed tweetId={props.tweetId} />
+      <div style={{ margin: '0 auto', display: 'inline-block', maxWidth: 'calc(100% - 20px)' }}>
+        <TwitterTweetEmbed options={{}} tweetId={props.tweetId} />
       </div>
     </Paper>
   );
