@@ -6,27 +6,32 @@ import Header from './components/Header';
 import TweetWrapper from './components/TweetWrapper';
 import ZipCodeForm from './components/ZipCodeForm';
 import ImageCarousel from './components/ImageCarousel';
+import { AppBar } from '@material-ui/core';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <TweetWrapper
-        title="react-swipeable-viewsを使って画像のカルーセルを作ってみました"
-        component={<ImageCarousel />}
-        tweetId="1269165549847638018"
-      />
-      <TweetWrapper
-        title="useEffectを使って郵便番号から住所をサジェストするフォームを作ってみました"
-        component={<ZipCodeForm />}
-        tweetId="1268693255421480961"
-      />
-      <TweetWrapper
-        title="useStateを使って押した回数をカウントするボタンを作ってみました"
-        component={<IncrementsButton defaultValue={0} />}
-        tweetId="1268485591533944832"
-      />
-    </div>
+    <>
+      <AppBar position="sticky" color="transparent">
+        <Header></Header>
+      </AppBar>
+      <div className="App">
+        <TweetWrapper
+          title="react-swipeable-viewsを使って画像のカルーセルを作ってみました"
+          component={<ImageCarousel />}
+          tweetId="1269165549847638018"
+        />
+        <TweetWrapper
+          title="useEffectを使って郵便番号から住所をサジェストするフォームを作ってみました"
+          component={<ZipCodeForm />}
+          tweetId="1268693255421480961"
+        />
+        <TweetWrapper
+          title="useStateを使って押した回数をカウントするボタンを作ってみました"
+          component={<IncrementsButton defaultValue={0} />}
+          tweetId="1268485591533944832"
+        />
+      </div>
+    </>
   );
 }
 
