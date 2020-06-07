@@ -19,7 +19,7 @@ function App() {
         <TweetWrapper
           title="Material-UIのモーダルを使ってみました"
           component={<ModalSample />}
-          tweetId="1269165549847638018"
+          tweetId="1269478731417964545"
         />
         <TweetWrapper
           title="react-swipeable-viewsを使って画像のカルーセルを作ってみました"
