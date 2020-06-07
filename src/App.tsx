@@ -7,6 +7,7 @@ import TweetWrapper from './components/TweetWrapper';
 import ZipCodeForm from './components/ZipCodeForm';
 import ImageCarousel from './components/ImageCarousel';
 import { AppBar } from '@material-ui/core';
+import { ModalSample } from './components/ModalSample';
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
         <Header></Header>
       </AppBar>
       <div className="App">
+        <TweetWrapper
+          title="Material-UIのモーダルを使ってみました"
+          component={<ModalSample />}
+          tweetId="1269165549847638018"
+        />
         <TweetWrapper
           title="react-swipeable-viewsを使って画像のカルーセルを作ってみました"
           component={<ImageCarousel />}
