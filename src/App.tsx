@@ -8,6 +8,7 @@ import ZipCodeForm from './components/ZipCodeForm';
 import ImageCarousel from './components/ImageCarousel';
 import { AppBar } from '@material-ui/core';
 import { ModalSample } from './components/ModalSample';
+import SortablePaneSample from './components/SortablePaneSample';
 
 function App() {
   return (
@@ -16,6 +17,11 @@ function App() {
         <Header></Header>
       </AppBar>
       <div className="App">
+        <TweetWrapper
+          title="react-sortable-paneを使ってかんばん風カードを作ってみました"
+          component={<SortablePaneSample />}
+          tweetId="1269786875713052672"
+        />
         <TweetWrapper
           title="Material-UIのモーダルを使ってみました"
           component={<ModalSample />}
