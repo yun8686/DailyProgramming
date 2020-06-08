@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
+import { MainMenu } from './MainMenu';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -27,11 +26,23 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header() {
   const classes = useStyles();
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuEl, setMenuEl] = useState(null);
   return (
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
-        <Button size="small">Triple-i</Button>
+        <Button
+          size="small"
+          onClick={(e: any) => {
+            setMenuEl(e.currentTarget);
+            setIsMenuOpen(true);
+          }}
+          aria-controls="main-menu"
+          aria-haspopup="true"
+        >
+          Triple-i
+        </Button>
+        <MainMenu anchorEl={menuEl} isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Typography
           component="h2"
           variant="h5"
