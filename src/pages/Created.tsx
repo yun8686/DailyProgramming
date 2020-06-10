@@ -6,10 +6,16 @@ import ImageCarousel from '../components/ImageCarousel';
 import ZipCodeForm from '../components/ZipCodeForm';
 import IncrementsButton from '../components/IncrementsButton';
 import GoogleLineChart from '../components/GoogleLineChart';
+import ColorPickerSample from '../components/ColorPickerSample';
 
 export function Created() {
   return (
     <>
+      <TweetWrapper
+        title="react-input-colorを使ってカラーピッカーを作ってみました"
+        component={<ColorPickerSample />}
+        tweetId="1270722007634599936"
+      />
       <TweetWrapper
         title="react-google-chartsを使ってサイコロを4個投げたときの目の合計をグラフにしてみました"
         component={<GoogleLineChart />}
