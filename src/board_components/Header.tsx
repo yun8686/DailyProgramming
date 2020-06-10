@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { MainMenu } from './MainMenu';
+import Menu from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -40,7 +41,7 @@ export default function Header() {
           aria-controls="main-menu"
           aria-haspopup="true"
         >
-          Triple-i
+          <Menu />
         </Button>
         <MainMenu anchorEl={menuEl} isOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         <Typography
