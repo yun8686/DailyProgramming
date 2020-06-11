@@ -7,10 +7,16 @@ import ZipCodeForm from '../components/ZipCodeForm';
 import IncrementsButton from '../components/IncrementsButton';
 import GoogleLineChart from '../components/GoogleLineChart';
 import ColorPickerSample from '../components/ColorPickerSample';
+import ReactSelect from '../components/ReactSelect';
 
 export function Created() {
   return (
     <>
+      <TweetWrapper
+        title="react-selectを使って検索可能なセレクトボックスを作ってみました"
+        component={<ReactSelect />}
+        tweetId="1271076272240615424"
+      />
       <TweetWrapper
         title="react-input-colorを使ってカラーピッカーを作ってみました"
         component={<ColorPickerSample />}
