@@ -8,10 +8,16 @@ import IncrementsButton from '../components/IncrementsButton';
 import GoogleLineChart from '../components/GoogleLineChart';
 import ColorPickerSample from '../components/ColorPickerSample';
 import ReactSelect from '../components/ReactSelect';
+import YoutubePlayer from '../components/YoutubePlayer';
 
 export function Created() {
   return (
     <>
+      <TweetWrapper
+        title="react-youtubeを使ってYoutubeプレイヤーを作ってみました"
+        component={<YoutubePlayer />}
+        tweetId="1271438220845215744"
+      />
       <TweetWrapper
         title="react-selectを使って検索可能なセレクトボックスを作ってみました"
         component={<ReactSelect />}
