@@ -9,10 +9,22 @@ import GoogleLineChart from '../components/GoogleLineChart';
 import ColorPickerSample from '../components/ColorPickerSample';
 import ReactSelect from '../components/ReactSelect';
 import YoutubePlayer from '../components/YoutubePlayer';
+import TopLoadingBar from '../components/TopLoadingBar';
+import StepperSample from '../components/StepperSample';
 
 export function Created() {
   return (
     <>
+      <TweetWrapper
+        title="Material-UIを使ってステッパーをつくってみました"
+        component={<StepperSample />}
+        tweetId="1272008158848749568"
+      />
+      <TweetWrapper
+        title="Material-UIのLinearProgressを使ってプログレスバーを作ってみた"
+        component={<TopLoadingBar />}
+        tweetId="1271683283466588161"
+      />
       <TweetWrapper
         title="react-youtubeを使ってYoutubeプレイヤーを作ってみました"
         component={<YoutubePlayer />}
