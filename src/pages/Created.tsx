@@ -11,10 +11,16 @@ import ReactSelect from '../components/ReactSelect';
 import YoutubePlayer from '../components/YoutubePlayer';
 import TopLoadingBar from '../components/TopLoadingBar';
 import StepperSample from '../components/StepperSample';
+import MaterialIconChangeButton from '../components/MaterialIconChangeButton';
 
 export function Created() {
   return (
     <>
+      <TweetWrapper
+        title="MaterialUIのアイコンをランダムに表示するボタンを作ってみました"
+        component={<MaterialIconChangeButton />}
+        tweetId="1272518056711839745"
+      />
       <TweetWrapper
         title="Material-UIを使ってステッパーをつくってみました"
         component={<StepperSample />}
