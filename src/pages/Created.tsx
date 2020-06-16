@@ -12,10 +12,11 @@ import YoutubePlayer from '../components/YoutubePlayer';
 import TopLoadingBar from '../components/TopLoadingBar';
 import StepperSample from '../components/StepperSample';
 import MaterialIconChangeButton from '../components/MaterialIconChangeButton';
+import Paging from '../board_components/LazyShow';
 
 export function Created() {
   return (
-    <>
+    <Paging unit={3}>
       <TweetWrapper
         title="MaterialUIのアイコンをランダムに表示するボタンを作ってみました"
         component={<MaterialIconChangeButton />}
@@ -76,6 +77,6 @@ export function Created() {
         component={<IncrementsButton defaultValue={0} />}
         tweetId="1268485591533944832"
       />
-    </>
+    </Paging>
   );
 }
