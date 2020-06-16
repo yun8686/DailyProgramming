@@ -13,10 +13,16 @@ import TopLoadingBar from '../components/TopLoadingBar';
 import StepperSample from '../components/StepperSample';
 import MaterialIconChangeButton from '../components/MaterialIconChangeButton';
 import Paging from '../board_components/LazyShow';
+import { Typography } from '@material-ui/core';
 
 export function Created() {
   return (
     <Paging unit={3}>
+      <TweetWrapper
+        title="React.PropsWithChildrenを使って子コンポーネントをページングするコンポーネントを作ってみました"
+        component={<Typography>このサイトに実装しました</Typography>}
+        tweetId="1272897624899760128"
+      />
       <TweetWrapper
         title="MaterialUIのアイコンをランダムに表示するボタンを作ってみました"
         component={<MaterialIconChangeButton />}
