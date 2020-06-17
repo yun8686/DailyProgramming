@@ -14,10 +14,17 @@ import StepperSample from '../components/StepperSample';
 import MaterialIconChangeButton from '../components/MaterialIconChangeButton';
 import Paging from '../board_components/LazyShow';
 import { Typography } from '@material-ui/core';
+import ReactPoseSample from '../components/ReactPoseSample';
 
 export function Created() {
   return (
     <Paging unit={3}>
+      <TweetWrapper
+        title="react-poseを使ってクリックすると透明度が変化するアニメーションを入れてみました"
+        component={<ReactPoseSample />}
+        tweetId="1273256770106875904"
+      />
+
       <TweetWrapper
         title="React.PropsWithChildrenを使って子コンポーネントをページングするコンポーネントを作ってみました"
         component={<Typography>このサイトに実装しました</Typography>}
